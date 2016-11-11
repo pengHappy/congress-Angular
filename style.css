@@ -1,0 +1,244 @@
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    height: 75px;
+    width: 100%;
+/*    background-color: azure;*/
+    text-align: center;
+}
+
+.headerLogo {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logoAnchor {
+    text-decoration: none;
+}
+
+#logoText {
+    font-size: 20px;
+    color: black;
+}
+
+.headerButton {
+  position: relative;
+  float: left;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid ;
+  border-radius: 4px;
+}
+
+.headerButton .headerButtonBar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    border: 1px solid;
+    margin: 5px 5px;;
+}
+
+
+nav.leftNavBar {
+    position: fixed;
+/*    display: inline-block;*/
+    width: 15%;
+    height: 100%;
+/*    transform: translate3d(-200px, 0, 0);*/
+    transition: transform 0.4s ease;
+}
+
+.active-nav nav.leftNavBar {
+    transform: translate3d(-215px,0,0);
+/*    transition: transform 0.4s ease;*/
+}
+
+.leftNavBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    background-color: black;
+    
+    height: 100%;
+    overflow: auto;
+}
+
+.leftNavBar li a {
+    display: inline-block;
+    color: gray;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.leftNavBar li a[ng-click] {
+    cursor: pointer;
+}
+
+/*
+.myIcon {
+    position: relative;
+}
+
+.myIcon:before {
+    content: "\f007";
+    font-family: FontAwesome;
+    left: 5px;
+    position: absolute;
+    top: 0;
+}
+*/
+
+.content {
+/*    padding: ;*/
+    width: 85%;
+    height: 800px;
+/*    text-align: center;*/
+    float: right;
+    background-color: rgb(246, 246, 246);
+    transition: width 0.4s ease;
+    
+}
+
+.active-nav .content {
+    width: 100%;
+}
+
+#headerContainer {
+/*
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+*/
+    background-color: rgb(246, 246, 246);
+}
+
+/*
+@media (min-width: 768px) {
+  #headerContainer {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  #headerContainer {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  #headerContainer {
+    width: 1170px;
+  }
+}
+*/
+
+.contentHeader {
+    margin-left: auto;
+    margin-right: auto;
+/*    padding-left: 10px;*/
+/*    padding-right: 15px;*/
+/*    background-color: aqua;*/
+}
+
+.tabsDivider {
+/*    margin-left: 10px;*/
+/*    margin-right: 10px;*/
+    border-top: 1px solid black;
+}
+
+.container-fluid {
+    background-color: rgb(255, 255, 255);
+/*    box-shadow: 0 0 30px black;*/
+}
+
+.nav-tabs li a {
+    display: inline-block;
+}
+
+/*
+.panel-body {
+    background-color: aqua;
+}
+
+.panel-body .table {
+    background-color: bisque;
+}
+*/
+
+
+.searchKeyword {
+    float: right;
+    width: 50px;
+    height: 30px;
+}
+
+/*@media (min-width: 768px) {*/
+  .container-scroll {
+    overflow-x: auto;
+  }
+  .container-scroll > .row {
+    width: 133.33333333%; /* = 100% * 4/3 */
+  }
+/*}*/
+
+
+img#legislatorDetailImg {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+img#fvImages {
+    width: 50px;
+    height: 50px;
+}
+
+img#chamberImg {
+    width: 20px;
+    height: 20px;
+}
+
+img#partyImg {
+    width: 25px;
+    height: 25px;
+}
+
+a.viewDetailAnchor {
+    text-decoration: none;
+    color: white;
+}
+
+a.viewDetailAnchor:hover {
+    text-decoration: none;
+    color: white;
+}
+
+img#socialLinkImg {
+    width: 20px;
+    height: 20px;
+}
+
+.resactive {
+    color: yellow;
+}
+
+#favbefore {
+    color: white;
+    -webkit-text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+    -moz-text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+    text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+}
+
+#favafter {
+    color: yellow;
+    -webkit-text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+    -moz-text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+    text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+}
